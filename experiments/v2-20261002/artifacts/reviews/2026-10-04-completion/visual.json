@@ -1,0 +1,42 @@
+{
+  "reviewed_at_utc": "2026-10-04T19:02:51.945104+00:00",
+  "scope": "Visual inspection of the five final PNG figures using view_image; PDF renderings were not separately inspected.",
+  "status": "passed_with_minor_presentation_note",
+  "figures": [
+    {
+      "path": "experiments/v2-20261002/artifacts/analysis/utility.png",
+      "sha256": "6ca9a00ead2bc11e87eb478a715378aafb799dbb90808de289ba364a83657e4f",
+      "viewed": true
+    },
+    {
+      "path": "experiments/v2-20261002/artifacts/analysis/coverage.png",
+      "sha256": "4593db81fb1f81ee1ec70d4267ebbe34f00ba6025d971157aa89cee15eba0763",
+      "viewed": true
+    },
+    {
+      "path": "experiments/v2-20261002/artifacts/analysis/selective_risk.png",
+      "sha256": "d1953dfcd888ce611426e5746ed0bdbf9135ff07fcf250ea972901e83ce99b13",
+      "viewed": true
+    },
+    {
+      "path": "experiments/v2-20261002/artifacts/analysis/calibration.png",
+      "sha256": "f5937f57dae2259918eff19918b5b6f9cfed8859f0e54bf0397ada0c6c6fec30",
+      "viewed": true
+    },
+    {
+      "path": "experiments/v2-20261002/artifacts/analysis/risk-coverage.png",
+      "sha256": "c84e7e2abaf184a4e27d66a7872d921901368d8eda90fd66698517ec430e7c1f",
+      "viewed": true
+    }
+  ],
+  "findings": [
+    "Utility, coverage, and selective-risk plots have readable axes and labels; seed-level points show the substantial variation of RL runs.",
+    "The utility plot includes zero and shows that all evaluated methods have negative mean primary utility on NQ.",
+    "Calibration curves and risk-coverage curves are readable; the latter use shared generator candidates and retain score ties.",
+    "The calibration legend overlaps some original-P(True) points in the lower-right part of the NQ panel. Move this legend in a future publication figure revision.",
+    "Seed-specific colors in the primary plots are not individually named in the legend; consult the accompanying tables for identities."
+  ],
+  "quantitative_interpretation_requires": "scientific.json",
+  "frozen_analysis_modified": false,
+  "manuscript_modified": false
+}

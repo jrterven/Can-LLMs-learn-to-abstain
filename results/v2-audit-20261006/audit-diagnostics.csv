@@ -1,0 +1,26 @@
+dataset,frame,automatic_label,human_semantic_label,sample_units,interpretation
+test_nq,rl,abstain,abstain,9,Stratified diagnostic count; not population error rate
+test_nq,rl,correct,correct,7,Stratified diagnostic count; not population error rate
+test_nq,rl,error,correct,4,Stratified diagnostic count; not population error rate
+test_nq,rl,error,error,4,Stratified diagnostic count; not population error rate
+test_nq,rl,error,unclear,1,Stratified diagnostic count; not population error rate
+test_nq,shared_agreement,abstain,abstain,3,Stratified diagnostic count; not population error rate
+test_nq,shared_agreement,correct,correct,6,Stratified diagnostic count; not population error rate
+test_nq,shared_agreement,error,correct,3,Stratified diagnostic count; not population error rate
+test_nq,shared_agreement,error,error,2,Stratified diagnostic count; not population error rate
+test_nq,shared_agreement,error,unclear,1,Stratified diagnostic count; not population error rate
+test_nq,shared_disagreement,correct,correct,18,Stratified diagnostic count; not population error rate
+test_nq,shared_disagreement,error,correct,12,Stratified diagnostic count; not population error rate
+test_nq,shared_disagreement,error,error,4,Stratified diagnostic count; not population error rate
+test_nq,shared_disagreement,error,unclear,1,Stratified diagnostic count; not population error rate
+test_trivia,rl,abstain,abstain,9,Stratified diagnostic count; not population error rate
+test_trivia,rl,correct,correct,8,Stratified diagnostic count; not population error rate
+test_trivia,rl,error,correct,3,Stratified diagnostic count; not population error rate
+test_trivia,rl,error,error,5,Stratified diagnostic count; not population error rate
+test_trivia,shared_agreement,abstain,abstain,3,Stratified diagnostic count; not population error rate
+test_trivia,shared_agreement,correct,correct,6,Stratified diagnostic count; not population error rate
+test_trivia,shared_agreement,error,correct,3,Stratified diagnostic count; not population error rate
+test_trivia,shared_agreement,error,error,3,Stratified diagnostic count; not population error rate
+test_trivia,shared_disagreement,correct,correct,19,Stratified diagnostic count; not population error rate
+test_trivia,shared_disagreement,error,correct,15,Stratified diagnostic count; not population error rate
+test_trivia,shared_disagreement,error,error,1,Stratified diagnostic count; not population error rate

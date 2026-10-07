@@ -1,0 +1,17 @@
+{
+  "qwen": {
+    "pinned_at": "2026-09-29T15:19:34.382254+00:00",
+    "repo": "Qwen/Qwen3-1.7B",
+    "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e"
+  },
+  "qwen14b": {
+    "pinned_at": "2026-09-30T21:38:24.810477+00:00",
+    "repo": "Qwen/Qwen3-14B",
+    "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+  },
+  "smol": {
+    "pinned_at": "2026-09-29T15:19:34.461818+00:00",
+    "repo": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674"
+  }
+}

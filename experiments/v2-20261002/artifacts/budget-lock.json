@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-10-02T20:01:03.363877+00:00",
+  "decision_uses": "Runtime only, before test; identical RL size across all arms/seeds",
+  "fixed_overhead_hours": 21.0,
+  "pilot_receipts": {
+    "rl": "6b5cf00873d8285715f06021d762b6611f351afddf9346939dd10555d44462ad",
+    "rl_reload": "779f536b8378fd8ccde862a7be639206d35c54eeccb2f9e3290edb8113872b33",
+    "rl_steps": "465bb7a0fb46b726b22a84f8e54994168a87cc1c4a2535d99070774f76ec525d",
+    "selector": "fda99f75e893a24ea980cd665e84e7184db8af95c9a2f2bcce473cd3572adf76",
+    "selector_steps": "0296995a2b5d29ead8bd023126aaee1b98d03234a5f2a462bf419089625ac5a7"
+  },
+  "projected_phase_hours": {
+    "504": 59.64315176365923,
+    "1008": 89.35515471733594
+  },
+  "projection_margin": 1.25,
+  "rl_completions": 12096,
+  "rl_questions": 504,
+  "rl_step_seconds": 28.297145670168295,
+  "rl_steps": 252,
+  "selector_step_seconds": 3.956691986512548,
+  "selector_steps": 500,
+  "spent_pilot_and_candidate_hours": 1.6203717336738999
+}

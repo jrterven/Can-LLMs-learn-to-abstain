@@ -1,0 +1,43 @@
+{
+  "inputs": {
+    "experiments/v2-20261002/data/prepared/calibration.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "fbf03016bb4135acf7c509c65468d1627115758893e4d52624693b7340312c63"
+    },
+    "experiments/v2-20261002/data/prepared/dev.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "be5f9b67bbc24c3cc0257c5ac4a86ff25d20f0c4790f8bfffc230abf70ad15a3"
+    },
+    "experiments/v2-20261002/data/prepared/exclusions.json": {
+      "reason": "local_input_not_distributed",
+      "sha256": "e784ab9aec049e4794c133f0baf9dc2f30a150dd95ae70d70ecad9b7730d491b"
+    },
+    "experiments/v2-20261002/data/prepared/test_nq.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "09a3b6fc48b0d0aada989d715dd7a9f71feaeeba3ad85836879ef874c2afaa0c"
+    },
+    "experiments/v2-20261002/data/prepared/test_trivia.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "6d3469dea951ffa455149fb39ed1e7031a9fe2ec819b4378fb0b9f92330eef96"
+    },
+    "experiments/v2-20261002/data/prepared/train.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "d6c02f6a23ceb79e1c66031a7de30db71bfccb8cfd9a389cb6559c4012980bfe"
+    },
+    "experiments/v2-20261002/data/prepared/train_full.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "eacbf21b326a5b6717f14eb069a4780d22ca6297520520dc210d54be2d769476"
+    },
+    "experiments/v2-20261002/data/prepared/train_reduced.jsonl": {
+      "reason": "local_input_not_distributed",
+      "sha256": "8c05fdb776a3be1ed92faea02c216bd34aeea888ae74b48bd17af398e4603f7f"
+    },
+    "paper/manuscript.tex": {
+      "reason": "editorial_excluded",
+      "sha256": "2d9e2fc0010f944982693fa43526a1867a5ca1715ef63aceb517edef85a22c5b"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Inputs of the historical v2 source lock absent from this bundle; not a reconstruction of all runtime artifacts",
+  "source_lock_sha256": "b2db40510e951172fb5d32386dfec3be5d7d88268c734a1d337ce82c8b255b30"
+}

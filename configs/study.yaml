@@ -1,0 +1,52 @@
+study_id: threshold-abstention-v1
+split_seed: 20260929
+seeds: [17, 29, 43]
+models:
+  qwen:
+    repo: Qwen/Qwen3-1.7B
+    thinking: false
+  smol:
+    repo: HuggingFaceTB/SmolLM2-1.7B-Instruct
+    thinking: false
+data:
+  train: 2000
+  reduced_train: 1000
+  dev: 500
+  calibration: 500
+  pilot: 256
+  test_trivia: 1000
+  test_nq: 1000
+  diagnostic: 200
+thresholds:
+  train: [0.5, 0.75, 0.9]
+  primary: [0.6, 0.8]
+  diagnostic: [0.5, 0.75, 0.9, 0.95]
+training:
+  lora_r: 16
+  lora_alpha: 32
+  learning_rate: 0.00001
+  beta: 0.04
+  temperature: 0.8
+  num_generations: 4
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  steps_per_generation: 4
+  max_prompt_length: 512
+  max_completion_length: 32
+  scale_rewards: none
+  loss_type: dr_grpo
+  pilot_steps: 32
+  checkpoint_steps: 50
+  fixed_tau: 0.75
+  warmup_learning_rate: 0.0002
+evaluation:
+  batch_size: 16
+  bootstrap_samples: 10000
+  audit_size: 150
+budget:
+  total_gpu_hours: 160
+  planned_gpu_hours: 128
+  reserve_gpu_hours: 32
+pilot:
+  min_mixed_fraction: 0.05
+  min_system_available_gib: 16

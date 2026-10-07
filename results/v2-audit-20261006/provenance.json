@@ -1,0 +1,24 @@
+{
+  "analysis_date": "2026-10-06",
+  "analysis_source_sha256": {
+    "analysis/audit_v2_sensitivity.py": "2e56e89675fe878fdf72ca91e0f45a0ac286b5a5d88a76c9f6d8475af2c268d2",
+    "tests/test_audit_v2_sensitivity.py": "aa10239b8130d58afb79729b47465f6c0edbcf17e7e3d92d776c2fde02ea94f4"
+  },
+  "files": {
+    "absolute-utility-sensitivity.csv": "cbd44b6110d86cb9af6295dca8418b564ed4701cc59413d1ed310410cf620670",
+    "audit-diagnostics.csv": "dcee0e889aa86bdb7cd8e72ce58006add600beba61f4b4a530a97c5edad7bca9",
+    "contrast-sensitivity.csv": "5165ce9ed72b6e8d8ca0429e4236403858dd1d2512f965ee9961010266691ce2",
+    "method-sensitivity.csv": "43cbe50fb8b17b83ac5fadbdfc4a7e79f921091aa1f7e15939c018b1559e69f5",
+    "per-seed-contrasts.csv": "46fd869bc0e1e5c1d9b93c455d3b9e38d13e5b918ff147e84c93eeab540854cd",
+    "summary.json": "43ed7090e8969b3dcd4158b172b800c24954738a7cd5155c18c13d2b57b6d3b7"
+  },
+  "frozen_endpoints_modified": false,
+  "independent_review_sha256": "15721577c29ee61349027afb1051f49daae8b26753a8429dcbcbe737f5ad863d",
+  "interpretation": "Partial post-hoc sensitivity. Unaudited outputs retain exact matching; the three unclear labels remain unresolved. Conditional bootstrap intervals exclude audit-selection and human-label uncertainty.",
+  "repository_inclusion_authorized_on": "2026-10-07",
+  "schema_version": 1,
+  "scope": "Six anonymous aggregate analysis outputs. No individual annotations, question/response text, annotator identity, model weights or manuscript.",
+  "source_directory": "artifacts/audit-v2-20261004/analysis-20261006/public",
+  "source_receipt_sha256": "0496f5ad86ad117b18a40ca9ff2cafe7c11ccc7438a0e5f920a9ad7037b76296",
+  "status": "aggregate_copies_verified"
+}

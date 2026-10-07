@@ -1,0 +1,64 @@
+{
+  "config_path": "experiments/v2-20261002/config.yaml",
+  "created_at": "2026-10-02T18:22:37.703695+00:00",
+  "data": {
+    "calibration": {
+      "path": "experiments/v2-20261002/data/prepared/calibration.jsonl",
+      "sha256": "fbf03016bb4135acf7c509c65468d1627115758893e4d52624693b7340312c63"
+    },
+    "dev": {
+      "path": "experiments/v2-20261002/data/prepared/dev.jsonl",
+      "sha256": "be5f9b67bbc24c3cc0257c5ac4a86ff25d20f0c4790f8bfffc230abf70ad15a3"
+    },
+    "train": {
+      "path": "experiments/v2-20261002/data/prepared/train_full.jsonl",
+      "sha256": "eacbf21b326a5b6717f14eb069a4780d22ca6297520520dc210d54be2d769476"
+    }
+  },
+  "data_manifest": "experiments/v2-20261002/data/prepared/manifest.json",
+  "evaluation": {
+    "dev_thresholds": [
+      0.6,
+      0.75,
+      0.9
+    ],
+    "diagnostic_count": 200,
+    "diagnostic_thresholds": [
+      0.6,
+      0.75,
+      0.9,
+      0.95
+    ],
+    "primary_thresholds": [
+      0.65,
+      0.85
+    ]
+  },
+  "min_system_available_gib": 16,
+  "model_key": "qwen14b",
+  "model_revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "model_workdir": "experiments/final-eval-20261001",
+  "output_root": "experiments/v2-20261002/artifacts/selector",
+  "pinned_image": "sha256:106bd8033f516b97e47ee39eb17c7477e516ae5329977665d25cac96ce90c10f",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "selector": {
+    "calibration_C": 1.0,
+    "epochs": 1,
+    "gradient_accumulation_steps": 4,
+    "greedy_candidates_per_question": 1,
+    "learning_rate": 1e-05,
+    "lora_alpha": 32,
+    "lora_r": 16,
+    "max_completion_length": 32,
+    "max_prompt_length": 512,
+    "micro_batch_size": 4,
+    "pilot_steps": 16,
+    "sampled_candidates_per_question": 3,
+    "temperature": 0.8
+  },
+  "study_id": "three-interventions-v2-20261002"
+}

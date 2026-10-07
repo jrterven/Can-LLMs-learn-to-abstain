@@ -1,0 +1,67 @@
+study_id: three-interventions-v2-20261002
+seeds: [17, 29, 43]
+split_seed: 20261002
+models:
+  qwen14b:
+    repo: Qwen/Qwen3-14B
+    thinking: false
+data:
+  train: 1008
+  reduced_train: 504
+  selector_train: 2000
+  dev: 500
+  calibration: 500
+  test_trivia: 2000
+  test_nq: 500
+  diagnostic: 200
+thresholds:
+  train: [0.60, 0.75, 0.90]
+  primary: [0.65, 0.85]
+  diagnostic: [0.60, 0.75, 0.90, 0.95]
+training:
+  lora_r: 16
+  lora_alpha: 32
+  learning_rate: 1.0e-5
+  beta: 0.04
+  temperature: 0.8
+  num_generations: 8
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 12
+  steps_per_generation: 12
+  max_prompt_length: 512
+  max_completion_length: 32
+  scale_rewards: none
+  loss_type: dr_grpo
+  pilot_steps: 32
+  checkpoint_steps: 84
+  fixed_tau: 0.75
+  questions_per_update: 2
+  exposure_slots_per_question: 3
+  estimator: leave_one_out
+selector:
+  lora_r: 16
+  lora_alpha: 32
+  learning_rate: 1.0e-5
+  epochs: 1
+  micro_batch_size: 4
+  gradient_accumulation_steps: 4
+  pilot_steps: 16
+  greedy_candidates_per_question: 1
+  sampled_candidates_per_question: 3
+  temperature: 0.8
+  max_prompt_length: 512
+  max_completion_length: 32
+  calibration_C: 1.0
+evaluation:
+  batch_size: 16
+  bootstrap_samples: 10000
+  bootstrap_seed: 20261002
+pilot:
+  min_system_available_gib: 16
+budget:
+  historical_recorded_hours: 40.5008728303
+  planned_phase_hours: 80
+  max_phase_hours: 110
+  global_limit_hours: 160
+  projection_margin: 1.25
+  schedule: continuous

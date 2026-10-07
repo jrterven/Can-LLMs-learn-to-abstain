@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "threshold-abstention"
+version = "0.1.0"
+description = "Reproducible threshold-conditioned abstention experiments on a single GPU"
+requires-python = ">=3.11"
+dependencies = ["PyYAML==6.0.3", "numpy==2.2.6", "scipy==1.15.3", "scikit-learn==1.7.2", "matplotlib==3.10.7", "psutil==7.1.2", "huggingface-hub==0.36.0"]
+
+[project.optional-dependencies]
+train = ["transformers==4.57.1", "trl==0.24.0", "peft==0.17.1", "datasets==4.2.0", "accelerate==1.11.0", "safetensors==0.6.2"]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+abstention = "abstention.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
